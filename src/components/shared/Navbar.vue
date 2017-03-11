@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+    <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
       <div class="container">
         <router-link to="/">
           <el-menu-item index="1">
@@ -33,7 +33,9 @@
 
         <router-link to="/checkout">
           <el-menu-item index="4">
-            Checkout
+            <el-badge :value="itemsQuantity" class="item">
+            Checkout ({{itemsQuantity}} {{'item' | pluralize(itemsQuantity) }})
+            </el-badge>
           </el-menu-item>
         </router-link>
 
@@ -43,17 +45,19 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex';
+
   export default {
     name: 'navbar',
+    computed: {
+      ...mapGetters([
+        'itemsQuantity',
+      ]),
+    },
     data() {
       return {
         activeIndex: '1',
       };
-    },
-    methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-      },
     },
   };
 </script>
@@ -61,8 +65,10 @@
   .navbar {
     margin-bottom: 30px;
   }
-
   .navbar a {
     text-decoration: none;
+  }
+  .el-badge__content.is-fixed {
+    top:15px;
   }
 </style>
