@@ -31,7 +31,7 @@
   };
 </script>
 
-<style>
+<style scoped>
   .time {
     font-size: 13px;
     color: #999;

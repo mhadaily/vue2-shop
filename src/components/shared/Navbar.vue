@@ -61,7 +61,7 @@
     },
   };
 </script>
-<style>
+<style scoped>
   .navbar {
     margin-bottom: 30px;
   }
