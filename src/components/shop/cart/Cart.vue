@@ -1,21 +1,18 @@
 <template>
   <div class="cart">
-    <el-steps :space="100" :active="1" finish-status="success">
-      <el-step title="Your Cart"></el-step>
-      <el-step title="Checkout"></el-step>
-    </el-steps>
+      <h3>Your Cart</h3>
       <p v-show="!products.length"><i>Please add some products to cart.</i></p>
+
       <Items
         v-for="product in products"
         :product="product"
         :key="product.id"></Items>
 
-      <Summery :total="total"></Summery>
+      <!--<Summery :total="total"></Summery>-->
 
-    <hr>
-
+    <br>
     <router-link to="/checkout">
-      <el-button>Go to Checkout</el-button>
+      <el-button type="success" size="large">Go to Checkout</el-button>
     </router-link>
   </div>
 </template>
