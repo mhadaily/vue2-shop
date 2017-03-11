@@ -1,10 +1,12 @@
 <template>
   <div class="hello">
-    <Slideshow></Slideshow>
-    <h1>{{ msg }}</h1>
-    <router-link to="/products">
-      <el-button>Go to Products</el-button>
-    </router-link>
+    <div class="container">
+      <Slideshow></Slideshow>
+      <h1>{{ msg }}</h1>
+      <router-link to="/products">
+        <el-button>Go to Products</el-button>
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -15,7 +17,7 @@
     name: 'hello',
     data() {
       return {
-        msg: 'Welcome to Your Vue.js Shop App By Majid Hajian',
+        msg: 'Welcome to Your Vue.js Shop App',
       };
     },
     components: {

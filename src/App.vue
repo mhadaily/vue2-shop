@@ -33,4 +33,9 @@
     margin: 0;
     padding: 0;
   }
+
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
 </style>
