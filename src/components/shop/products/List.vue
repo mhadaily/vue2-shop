@@ -1,7 +1,7 @@
 <template>
-  <div class="products">
+  <el-row :gutter="24">
     <Single :product="product" v-for="product in products"></Single>
-  </div>
+  </el-row>
 </template>
 
 <script>

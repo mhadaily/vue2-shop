@@ -34,8 +34,12 @@
     padding: 0;
   }
 
-  .container {
-    width: 1024px;
+  .container, .page-container {
+    width: 1140px;
+    padding: 0 30px;
     margin: 0 auto;
+  }
+  .el-card{
+    margin-bottom: 20px;
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div class="container">
+    <div class="page-container">
       <Slideshow></Slideshow>
       <h1>{{ msg }}</h1>
       <router-link to="/products">

@@ -1,16 +1,14 @@
 <template>
-  <div class="shop">
-      <el-row>
-        {{msg}}
-      </el-row>
-      <el-row>
-        <el-col :span="18">
-            <ProductList></ProductList>
-        </el-col>
-        <el-col :span="6">
-            <Cart></Cart>
-        </el-col>
-      </el-row>
+  <div class="page-container">
+    <el-row>
+      {{msg}}
+    </el-row>
+
+    <el-row :gutter="24">
+      <el-col :span="18"> <ProductList></ProductList></el-col>
+      <el-col :span="6">  <Cart></Cart></el-col>
+    </el-row>
+
   </div>
 </template>
 
@@ -22,7 +20,7 @@
     name: 'shop',
     data() {
       return {
-        msg: 'SHOP',
+        msg: 'SHOP - LIST OF PRODUCTS',
       };
     },
     components: {
@@ -31,3 +29,15 @@
     },
   };
 </script>
+<style>
+  .el-row {
+    margin-bottom: 20px;
+  }
+  .el-row:last-child {
+    margin-bottom: 0;
+  }
+  .el-col {
+    border-radius: 4px;
+  }
+
+</style>
