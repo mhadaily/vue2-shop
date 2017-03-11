@@ -17,14 +17,14 @@
 <script>
   import Email from './Email';
   import Phone from './Phone';
-  import Map from './Gmap';
+  import Gmap from './Gmap';
 
   export default {
     name: 'contact',
     components: {
       Email,
       Phone,
-      Map,
+      Gmap,
     },
   };
 </script>
