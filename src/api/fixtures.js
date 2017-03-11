@@ -1,3 +1,4 @@
+/* eslint-disable */
 const profile = {
   'firstName': 'Majid',
   'lastName': 'Hajian',
