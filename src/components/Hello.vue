@@ -1,12 +1,25 @@
 <template>
   <div class="hello">
     <div class="page-container">
+      <br>
       <Slideshow></Slideshow>
-      <h1>{{ msg }}</h1>
-      <router-link to="/products">
-        <el-button>Go to Products</el-button>
-      </router-link>
+
     </div>
+    <el-row>
+      <div class="parallax">
+        <h1>{{ msg }}</h1>
+        <router-link to="/products">
+          <el-button>Go to Products</el-button>
+        </router-link>
+      </div>
+    </el-row>
+    <el-row>
+        <p>
+          This app has been made with Vue.js in order to compare with Angular 2 and Ember.js. <br/>
+          A tutorial and comparison chart and table will be published soon.
+        </p>
+    </el-row>
+
   </div>
 </template>
 
@@ -30,6 +43,7 @@
 <style scoped>
   h1, h2 {
     font-weight: normal;
+    color: #fff;
   }
 
   ul {
@@ -44,5 +58,11 @@
 
   a {
     color: #42b983;
+  }
+
+  .parallax {
+    margin: 50px 0;
+    padding: 100px 0;
+    background: url('../assets/bg.jpg') no-repeat center center fixed;
   }
 </style>
