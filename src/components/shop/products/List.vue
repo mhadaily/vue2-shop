@@ -1,6 +1,6 @@
 <template>
   <div class="products">
-    <Single :products="products"></Single>
+    <Single :product="product" v-for="product in products"></Single>
   </div>
 </template>
 

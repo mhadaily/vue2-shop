@@ -1,6 +1,5 @@
 <template>
-  <div class="single">
-    <el-col :span="8" :body-style="{ margin: '15px' }" v-for="product in products">
+    <el-col :span="8" :body-style="{ margin: '15px' }">
       <el-card :body-style="{ padding: '0px' }">
         <img src="http://lorempixel.com/300/400/" class="image">
         <div style="padding: 14px;">
@@ -12,16 +11,14 @@
         </div>
       </el-card>
     </el-col>
-  </div>
 </template>
 
 <script>
   import AddToCart from './AddToCart';
 
   export default {
-    name: 'single',
     props: {
-      products: Object,
+      product: Object,
     },
     data() {
       return {

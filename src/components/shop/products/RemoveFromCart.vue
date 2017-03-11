@@ -1,9 +1,5 @@
 <template>
-  <el-button
-          :disabled="!product.inventory"
-          @click="addToCart(product)">
-    Add to cart
-  </el-button>
+  <el-button type="danger" size="mini" icon="delete" @click="removeFromCart(product)"></el-button>
 </template>
 
 <script>
@@ -14,7 +10,7 @@
       product: Object,
     },
     methods: mapActions([
-      'addToCart',
+      'removeFromCart',
     ]),
   };
 </script>
