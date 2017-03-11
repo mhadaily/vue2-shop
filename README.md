@@ -7,6 +7,16 @@ I encourage you to read my article about this comparison.
 
 This project has been initialized by Vue-Cli. 
 
+## Dependencies  
+
+* "vue"
+* "vue-router"
+* "vuex"
+
+## Deploy to gh-page
+
+easily run this command when you forked: `npm run deploy`
+
 ## Build Setup
 
 ``` bash
