@@ -1,16 +1,23 @@
 <template>
   <div class="products">
-    {{msg}}
+    <Single :products="products"></Single>
   </div>
 </template>
 
 <script>
+  import { mapGetters } from 'vuex';
+  import Single from './Single';
+
   export default {
     name: 'products',
-    data() {
-      return {
-        msg: 'Product List compoenrnt',
-      };
+    computed: mapGetters({
+      products: 'allProducts',
+    }),
+    created() {
+      this.$store.dispatch('getAllProducts');
+    },
+    components: {
+      Single,
     },
   };
 </script>

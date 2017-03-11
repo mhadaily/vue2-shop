@@ -11,7 +11,7 @@ import Cart from '@/components/shop/cart/Cart';
 import Contact from '@/components/contact/Index';
 import Email from '@/components/contact/Email';
 import Phone from '@/components/contact/Phone';
-import Map from '@/components/contact/Map';
+import Gmap from '@/components/contact/Gmap';
 
 Vue.use(Router);
 
@@ -55,8 +55,8 @@ export default new Router({
           component: Phone,
         },
         {
-          path: 'map',
-          component: Map,
+          path: 'gmap',
+          component: Gmap,
         },
       ],
     },
