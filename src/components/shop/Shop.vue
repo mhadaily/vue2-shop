@@ -1,8 +1,18 @@
 <template>
   <div class="shop">
-    {{msg}}
-    <ProductList></ProductList>
-    <Cart></Cart>
+    <div class="container">
+      <el-row>
+        {{msg}}
+      </el-row>
+      <el-row>
+        <el-col :span="18">
+            <ProductList></ProductList>
+        </el-col>
+        <el-col :span="6">
+            <Cart></Cart>
+        </el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
