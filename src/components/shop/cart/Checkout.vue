@@ -10,12 +10,13 @@
       </el-steps>
       <br>
 
+      <h3 v-if="!products.length">Nothing in your basket, please select some items.</h3>
       <Items
         v-for="product in products"
         :product="product"
         :key="product.id"></Items>
 
-      <Summery :total="total"></Summery>
+      <Summery :total="total" v-if="products.length"></Summery>
 
       <br>
       <p v-show="checkoutStatus">Checkout {{ checkoutStatus }}.</p>
