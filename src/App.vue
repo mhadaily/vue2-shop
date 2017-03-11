@@ -2,6 +2,7 @@
   <div id="app">
     <el-row>
       <el-col :span="24">
+        <Navbar></Navbar>
         <router-view></router-view>
       </el-col>
     </el-row>
@@ -9,8 +10,13 @@
 </template>
 
 <script>
+  import Navbar from './components/shared/Navbar';
+
   export default {
     name: 'app',
+    components: {
+      Navbar,
+    },
   };
 </script>
 
@@ -21,6 +27,10 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
   }
 </style>
