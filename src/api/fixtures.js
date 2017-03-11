@@ -30,14 +30,14 @@ const promotions = [
 // Simulate requests
 export default {
   getProfile(cb) {
-    setTimeout(() => cb(profile), 200);
+    setTimeout(() => cb(profile), 500);
   },
 
   getProducts(cb) {
-    setTimeout(() => cb(products), 200);
+    setTimeout(() => cb(products), 500);
   },
 
   getPromotions(cb) {
-    setTimeout(() => cb(promotions), 200);
+    setTimeout(() => cb(promotions), 500);
   },
 };
