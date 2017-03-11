@@ -3,7 +3,9 @@ import Vuex from 'vuex';
 import * as actions from './shop/actions';
 import * as getters from './shop/getters';
 import products from './shop/modules/products';
-
+import profile from './shop/modules/profile';
+import promotions from './shop/modules/promotions';
+import cart from './shop/modules/cart';
 
 Vue.use(Vuex);
 
@@ -15,6 +17,9 @@ export default new Vuex.Store({
   getters,
   modules: {
     products,
+    profile,
+    promotions,
+    cart,
   },
   strict: debug,
 });
