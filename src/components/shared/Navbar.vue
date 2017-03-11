@@ -15,16 +15,28 @@
         </router-link>
 
         <el-submenu index="3">
-          <template slot="title">Your Cart</template>
-          <router-link to="/cart">
-            <el-menu-item index="3-1">Summery</el-menu-item>
+          <template slot="title">Contact</template>
+          <router-link to="/contact">
+            <el-menu-item index="3-1">Email</el-menu-item>
           </router-link>
-          <router-link to="/cart/checkout">
+          <router-link to="/cart/phone">
             <el-menu-item index="3-2">
-              Checkout
+              Phone
+            </el-menu-item>
+          </router-link>
+          <router-link to="/cart/map">
+            <el-menu-item index="3-3">
+              Map
             </el-menu-item>
           </router-link>
         </el-submenu>
+
+        <router-link to="/checkout">
+          <el-menu-item index="4">
+            Checkout
+          </el-menu-item>
+        </router-link>
+
       </div>
     </el-menu>
   </div>

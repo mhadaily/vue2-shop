@@ -1,15 +1,16 @@
 <template>
-  <div class="basket">
+  <div class="summery">
     {{msg}}
-    <router-link to="/cart/checkout">
-      <el-button>Go to  Checkout page</el-button>
+    <br/>
+    <router-link to="/checkout">
+      <el-button>Go to  Checkout</el-button>
     </router-link>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'basket',
+    name: 'summery',
     data() {
       return {
         msg: 'Your basket',

@@ -1,8 +1,8 @@
 <template>
   <div class="checkout">
     {{msg}}
-    <router-link to="/cart/thanks">
-      <el-button>Go to  Thank you page</el-button>
+    <router-link to="/thanks">
+      <el-button>Go to Thanks</el-button>
     </router-link>
   </div>
 </template>
