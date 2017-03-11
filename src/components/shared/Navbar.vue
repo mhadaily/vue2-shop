@@ -31,7 +31,7 @@
           </router-link>
         </el-submenu>
 
-        <router-link to="/checkout">
+        <router-link to="/checkout" style="float: right;">
           <el-menu-item index="4">
             <el-badge :value="itemsQuantity" class="item">
             Checkout ({{itemsQuantity}} {{'item' | pluralize(itemsQuantity) }})
