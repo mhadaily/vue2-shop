@@ -6,7 +6,7 @@
     <router-link to="/contact/phone">
       <el-button>Phone</el-button>
     </router-link>
-    <router-link to="/contact/map">
+    <router-link to="/contact/gmap">
       <el-button>Map</el-button>
     </router-link>
     <hr>
@@ -17,7 +17,7 @@
 <script>
   import Email from './Email';
   import Phone from './Phone';
-  import Map from './Map';
+  import Map from './Gmap';
 
   export default {
     name: 'contact',

@@ -19,12 +19,12 @@
           <router-link to="/contact">
             <el-menu-item index="3-1">Email</el-menu-item>
           </router-link>
-          <router-link to="/cart/phone">
+          <router-link to="/contact/phone">
             <el-menu-item index="3-2">
               Phone
             </el-menu-item>
           </router-link>
-          <router-link to="/cart/map">
+          <router-link to="/contact/gmap">
             <el-menu-item index="3-3">
               Map
             </el-menu-item>
@@ -45,8 +45,10 @@
 <script>
   export default {
     name: 'navbar',
-    data: {
-      activeIndex: '1',
+    data() {
+      return {
+        activeIndex: '1',
+      };
     },
     methods: {
       handleSelect(key, keyPath) {
