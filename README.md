@@ -3,7 +3,7 @@
 > This is an experimental Vue Project in order to compare with Angular2 and Ember2, please check out readme. 
 
 Please checkout Angular2 and Ember.js Version of this project. 
-I encourage you to read my article about this comparision.
+I encourage you to read my article about this comparison.
 
 This project has been initialized by Vue-Cli. 
 
