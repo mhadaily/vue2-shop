@@ -1,13 +1,17 @@
 <template>
-  <div class="media mb-1">
-    <div class="media-body">
-      <strong class="d-block">{{product.title}}</strong>
-      <span>Quantity: {{product.quantity}} - {{product.price}}</span>
+  <el-card class="box-card">
+    <div slot="header" class="clearfix">
+      <span><strong> {{product.title}} </strong></span>
+      <remove-from-cart style="float: right;" :product="product"></remove-from-cart>
+
     </div>
-    <div class="media-right align-middle">
-      <remove-from-cart :product="product"></remove-from-cart>
+    <div class="text item">
+      <i class="el-icon-circle-check"></i> Quantity: <strong>{{product.quantity}}</strong><br/>
+      <i class="el-icon-circle-check"></i> Unit-Price: <strong>{{product.price | formatMoney}}</strong><br>
+      <i class="el-icon-circle-check"></i> Unit-Total: <strong>{{product.price * product.quantity}}</strong>
     </div>
-  </div>
+  </el-card>
+
 </template>
 
 <script>
@@ -22,3 +26,8 @@
     },
   };
 </script>
+<style>
+  .text{
+    text-align: left;
+  }
+</style>
