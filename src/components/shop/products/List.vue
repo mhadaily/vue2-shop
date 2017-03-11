@@ -1,6 +1,6 @@
 <template>
   <div class="products">
-    List of Products
+    {{msg}}
   </div>
 </template>
 
@@ -9,7 +9,7 @@
     name: 'products',
     data() {
       return {
-        msg: 'Welcome to Your Vue.js App',
+        msg: 'Product List compoenrnt',
       };
     },
   };
