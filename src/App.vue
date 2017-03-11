@@ -3,7 +3,7 @@
     <el-row>
       <el-col :span="24">
         <Navbar></Navbar>
-        <router-view></router-view>
+        <transition name="move" mode="out-in"><router-view></router-view></transition>
       </el-col>
     </el-row>
   </div>

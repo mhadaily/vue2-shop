@@ -1,14 +1,13 @@
+/* eslint-disable */
 import Vue from 'vue';
 import Router from 'vue-router';
 
 import Hello from '@/components/Hello';
 
-import Shop from '@/components/shop/Shop';
 import Thanks from '@/components/shop/cart/Thanks';
 import Checkout from '@/components/shop/cart/Checkout';
 import Cart from '@/components/shop/cart/Cart';
 
-import Contact from '@/components/contact/Index';
 import Email from '@/components/contact/Email';
 import Phone from '@/components/contact/Phone';
 import Gmap from '@/components/contact/Gmap';
@@ -25,7 +24,7 @@ export default new Router({
     {
       path: '/products',
       name: 'Shop',
-      component: Shop,
+      component: resolve => require(['./../components/shop/Shop.vue'], resolve),
     },
     {
       path: '/cart',
@@ -44,7 +43,7 @@ export default new Router({
     },
     {
       path: '/contact',
-      component: Contact,
+      component: resolve => require(['./../components/contact/Index.vue'], resolve),
       children: [
         {
           path: '',

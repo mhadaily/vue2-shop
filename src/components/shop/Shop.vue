@@ -1,6 +1,5 @@
 <template>
   <div class="shop">
-    <div class="container">
       <el-row>
         {{msg}}
       </el-row>
@@ -12,7 +11,6 @@
             <Cart></Cart>
         </el-col>
       </el-row>
-    </div>
   </div>
 </template>
 
