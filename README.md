@@ -2,8 +2,8 @@
 
 > This is an experimental Vue Project in order to compare with Angular2 and Ember2, [Live Demo](https://www.majidhajian.com/vue2-shop/). 
 
-Please checkout Angular2 and Ember.js Version of this project. 
-I encourage you to read my article about this comparison.
+Please checkout Angular2 and Ember.js Version of this project.(Coming soon)
+I encourage you to read my [article about this comparison](https://goo.gl/cnaXDq). 
 
 This project has been initialized by Vue-Cli using Webpack, Mocha, ESlint. 
 
@@ -42,5 +42,13 @@ npm run e2e
 # run all tests
 npm test
 ```
+
+## TODO
+* Unit Test
+* Integration Test
+* Add backend logic 
+* Pagination
+* Add Guard for Route (User Profile)
+* Promotions and Discounts
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
