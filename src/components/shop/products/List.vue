@@ -1,6 +1,6 @@
 <template>
   <el-row :gutter="24">
-    <Single :product="product" v-for="product in products"></Single>
+    <Single :product="product" v-for="product in products" :key="product.$index"></Single>
   </el-row>
 </template>
 
