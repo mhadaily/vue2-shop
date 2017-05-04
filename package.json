@@ -17,8 +17,8 @@
     "accounting": "^0.4.1",
     "element-ui": "^1.2.9",
     "pluralize": "^4.0.0",
-    "vue": "^2.2.6",
-    "vue-router": "^2.5.2",
+    "vue": "^2.3.2",
+    "vue-router": "^2.5.3",
     "vuex": "^2.3.1"
   },
   "devDependencies": {
@@ -77,9 +77,9 @@
     "sinon": "^2.1.0",
     "sinon-chai": "^2.9.0",
     "url-loader": "^0.5.7",
-    "vue-loader": "^11.3.4",
+    "vue-loader": "^12.0.3",
     "vue-style-loader": "^3.0.1",
-    "vue-template-compiler": "^2.2.6",
+    "vue-template-compiler": "^2.3.2",
     "webpack": "^2.4.1",
     "webpack-bundle-analyzer": "^2.4.0",
     "webpack-dev-middleware": "^1.10.2",
