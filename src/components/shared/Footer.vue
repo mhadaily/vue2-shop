@@ -1,8 +1,8 @@
 <template>
   <div class="footer">
-    <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
+    <el-menu theme="dark" class="el-menu-demo" mode="horizontal">
       <div class="page-container">
-          <a target="_blank" href="https://www.majidhajian.com">
+          <a target="_blank" href="https://www.majidhajian.com/">
               {{footer}}
           </a>
       </div>
@@ -13,10 +13,10 @@
 <script>
 
   export default {
-    name: 'footer',
+    name: 'siteFooter',
     data() {
       return {
-        footer: 'Copyright 2017, Majid Hajian. Made with Love by Vue.js',
+        footer: 'Copyright 2017, Majid Hajian. Made with Love and Vue.js',
       };
     },
   };

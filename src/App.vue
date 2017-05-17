@@ -4,7 +4,7 @@
       <el-col :span="24">
         <Navbar></Navbar>
         <transition name="move" mode="out-in"><router-view></router-view></transition>
-        <Footer></Footer>
+        <siteFooter></siteFooter>
       </el-col>
     </el-row>
   </div>
@@ -12,13 +12,13 @@
 
 <script>
   import Navbar from './components/shared/Navbar';
-  import Footer from './components/shared/Footer';
+  import siteFooter from './components/shared/Footer';
 
   export default {
     name: 'app',
     components: {
       Navbar,
-      Footer,
+      siteFooter,
     },
   };
 </script>
