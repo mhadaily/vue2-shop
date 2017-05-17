@@ -16,7 +16,7 @@
         :product="product"
         :key="product.id"></Items>
 
-      <Summery :total="total" v-if="products.length"></Summery>
+      <Summery v-if="products.length"></Summery>
 
       <br>
       <p v-show="checkoutStatus">Checkout {{ checkoutStatus }}.</p>
