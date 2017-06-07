@@ -50,5 +50,6 @@ npm test
 * Pagination
 * Add Guard for Route (User Profile)
 * Promotions and Discounts
+* Refine code and bundle 
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
